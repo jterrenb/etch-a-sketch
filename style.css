@@ -13,14 +13,18 @@
     margin: 12px;
 }
 .container {
-    min-width: 960px;
+    width: 960px;
+    height: 960px;
     border-color: black;
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
 
 }
 .container > div {
     max-width: 13px;
     max-height: 13px;
     border: 1px solid grey;
+    height: 13px;
+    width: 13px;
 }
