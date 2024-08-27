@@ -34,6 +34,42 @@
     flex: initial;
     aspect-ratio: 1;
 }
-.black {
+.black10 {
+    background-color: black;
+    opacity: 10%;
+}
+.black20 {
+    background-color: black;
+    opacity: 20%;
+}
+.black30 {
+    background-color: black;
+    opacity: 30%;
+}
+.black40 {
+    background-color: black;
+    opacity: 40%;
+}
+.black50 {
+    background-color: black;
+    opacity: 50%;
+}
+.black60 {
+    background-color: black;
+    opacity: 60%;
+}
+.black70 {
+    background-color: black;
+    opacity: 70%;
+}
+.black80 {
+    background-color: black;
+    opacity: 80%;
+}
+.black90 {
+    background-color: black;
+    opacity: 90%;
+}
+.fullblack {
     background-color: black;
 }

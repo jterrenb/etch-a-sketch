@@ -31,10 +31,37 @@ btn.addEventListener("click", (question) => {
 });
 
 
-container.addEventListener("mousemove", (event) => {
+container.addEventListener("mouseover", (event) => {
     let target = event.target;
-    if(target.className === "square") {
-        target.classList.add("black");
+    if ( target.className == "square black90") {
+        target.classList.remove ("black90")
+        target.classList.add("fullblack");
+    } else if ( target.className == "square black80") {
+        target.classList.remove ("black80")
+        target.classList.add("black90");
+    } else if ( target.className == "square black70") {
+        target.classList.remove ("black70")
+        target.classList.add("black80");
+    } else if ( target.className == "square black60") {
+        target.classList.remove ("black60")
+        target.classList.add("black70");
+    } else if ( target.className == "square black50") {
+        target.classList.remove ("black50")
+        target.classList.add("black60");
+    } else if ( target.className == "square black40") {
+        target.classList.remove ("black40")
+        target.classList.add("black50");
+    } else if ( target.className == "square black30") {
+        target.classList.remove ("black30")
+        target.classList.add("black40");
+    } else if ( target.className == "square black20") {
+        target.classList.remove ("black20")
+        target.classList.add("black30");
+    } else if ( target.className == "square black10") {
+        target.classList.remove ("black10")
+        target.classList.add("black20");
+    }else if(target.className === "square") {
+        target.classList.add("black10")
     }
 })
 createSketchPad();
