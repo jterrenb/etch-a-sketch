@@ -20,8 +20,18 @@ function createSketchPad(squareQty = 64) {
 }
 
 const btn= document.querySelector(".btn");
-//btn.addEventListener("click", )
+btn.addEventListener("click", (question) => {
+    let input = +prompt("Type how many squares do you want for line (max 100 squares for line):", 64);
+    if (input > 0 && input <= 100) {
+        alert(input);
+    } else {
+        alert("Mal");
+    }
+});
 
 
-
-createSketchPad(64);
+//container.addEventListener("mouseenter", (event) => {
+//    let target = event.target;
+//    event.target.classList.add("black");
+//})
+//createSketchPad(64);

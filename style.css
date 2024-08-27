@@ -34,3 +34,6 @@
     flex: initial;
     aspect-ratio: 1;
 }
+.black {
+    background-color: black;
+}
