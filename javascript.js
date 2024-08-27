@@ -4,7 +4,7 @@ let container = document.querySelector(".container");
 let div = [];
 let line;
 
-function createCanvas(squareQty = 64) {
+function createSketchPad(squareQty = 64) {
     line = document.createElement("div");
     line.classList.add("line");
     container.appendChild(line);
@@ -24,4 +24,4 @@ const btn= document.querySelector(".btn");
 
 
 
-createCanvas(64);
+createSketchPad(64);

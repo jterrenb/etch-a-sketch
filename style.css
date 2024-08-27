@@ -13,20 +13,24 @@
     margin: 12px;
 }
 .container {
-    width: 960px;
-    height: 960px;
+    max-width: 960px;
+    max-height: 960px;
     display: flex;
     margin: auto;
     flex-direction: column;
+    margin-bottom: 32px;
 }
 .line {
+    max-width: 960px;
     display: flex;
-    margin:auto;
+    margin:0 auto;
+    flex: initial;
 }
 .square {
     max-width: 13px;
     max-height: 13px;
     border: 1px solid grey;
-    height: 13px;
     width: 13px;
+    flex: initial;
+    aspect-ratio: 1;
 }
