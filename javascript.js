@@ -1,13 +1,21 @@
 let squareQty;
-let line = 0;
-let column = 0;
+let square;
 let container = document.querySelector(".container");
 let div = [];
+let line;
 
 function createCanvas(squareQty = 64) {
-    for ( let i = 0; i< squareQty; i++) {
-        div.push(document.createElement("div"));
-        container.appendChild(div[i]);
+    line = document.createElement("div");
+    line.classList.add("line");
+    container.appendChild(line);
+    square = document.createElement("div");
+    square.classList.add("square");
+    line.appendChild(square);
+    for ( let i = 1; i< squareQty; i++) {
+        line.appendChild(square.cloneNode());
+    }
+    for (let l = 1; l < squareQty; l++) {
+        container.appendChild(line.cloneNode(true));
     }
 }
 
@@ -16,4 +24,4 @@ const btn= document.querySelector(".btn");
 
 
 
-createCanvas(4096);
+createCanvas(64);
